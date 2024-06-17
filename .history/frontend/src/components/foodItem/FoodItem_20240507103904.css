@@ -1,0 +1,91 @@
+/* FoodItem.css */
+
+/* Base styles for the food item container */
+.food-item {
+  width:100%;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px #00000015;
+  transition; 0.3s;
+  animation: fadeIn 2s;
+}
+
+/* Food item image container */
+.food-item-img-container {
+  flex: 1;
+  max-width: 100px; /* Adjust as needed */
+  position: relative;
+}
+.food-item-img-container .add{
+widrh: 35px;posi
+}
+/* Food item image */
+.food-item-img {
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+}
+.responsive{
+   width: 100%;
+  max-width: 400px;
+  height: auto;}
+ 
+
+/* Food item info container */
+.food-item-info {
+  flex: 2;
+  padding-left: 16px;
+}
+
+/* Food item name and rating */
+.food-item-name-rating {
+  width:70px;
+
+}
+.food-item-name-rating p{
+  font-size: 20px;
+  font-weight: 500;
+}
+/* Food item name */
+.food-item-name {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* Food item rating (assuming it's an icon) */
+.food-item-rating img {
+  width: 10px;
+  height: 10px;
+}
+.food-item-counter{
+  width: 30px;
+  height: 30px;
+}
+ /* .add{
+  width: 30px;
+  height: 30px;
+} */
+/* Food item description */
+.food-item-desc {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* Food item price */
+.food-item-price {
+  margin-top: 10px 0px;
+  font-weight: 500;
+  color: coral;
+  font-size: 20px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .food-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .food-item-img-container {
+   width: 100%; /* Full width on smaller screens */
+  }
+}

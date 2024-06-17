@@ -1,0 +1,66 @@
+/* FoodDisplay.css */
+
+/* Base styles for the food display container */
+.food-display{
+  /* font-size: 24px;
+  color: #333; */
+  margin-top: 30px;
+}
+.food-display h2{
+font-size:max(2vw, 24px);
+font-wieght: 600;
+}
+/* Responsive grid layout */
+.food-display-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill), minmax(400px, 1fr)); /* Adjust column width as needed */
+  gap: 20px;
+}
+
+/* Food item styles */
+.food-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Food item image styles */
+.food-item img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+/* Food item info styles */
+.food-item-info {
+  padding-left: 16px;
+}
+
+/* Food item name and rating styles */
+.food-item-name-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.food-item-name-rating p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Food item description styles */
+.food-item-desc {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* Food item price styles */
+.food-item-price {
+  margin-top: 10px;
+  font-weight: 500;
+  color: tomato;
+  font-size: 20px;
+}
+

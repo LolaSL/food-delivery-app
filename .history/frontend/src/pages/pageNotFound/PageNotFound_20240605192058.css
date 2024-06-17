@@ -1,0 +1,21 @@
+.not-found{
+    text-align:center;
+    background-image:url('images/login/login_background.jpg');
+    font-size: 20px;
+}
+
+.title-not-found{
+    color: coral;
+    font-weight:bold;
+    margin:60px;
+}
+
+.not-found-paragraph{
+    color:teal;
+    font-weight:bold;
+    bottom:40px;
+}
+#login-bg {
+    background-image:url('images/login/login_background.jpg');
+    font-size: 20px;
+}

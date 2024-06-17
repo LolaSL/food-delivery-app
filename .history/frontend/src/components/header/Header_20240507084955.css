@@ -1,0 +1,72 @@
+/* Base styles for the header container */
+.header {
+  height: 32vw;
+  margin: 30px auto;
+  background: url("/header_img.png") no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+/* Header content styles */
+.header-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 10%;
+  left: 6vw;
+  animation: fadeIn 3s;
+}
+
+/* Header content heading style */
+.header-content h2 {
+  font-weight: 500;
+  font-size: max(4.2vw, 22px);
+  color: white;
+}
+
+/* Header content paragraph style */
+.header-content p {
+  font-size: 1.5vw;
+  color: white;
+}
+
+/* Header content button style */
+.header-content button {
+  border: none;
+  color: hsl(198, 63%, 38%);
+  font-weight: 500;
+  padding: 1vw 2.3vw;
+  background-color: white;
+  font-size: max(1vw, 13px);
+  border-radius: 50px;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+  .header {
+    height: auto; /* Adjust height as needed for smaller screens */
+  }
+
+  .header-content {
+    max-width: 100%; /* Take full width on smaller screens */
+    left: 0; /* Center horizontally */
+    bottom: 0; /* Move to the bottom */
+    padding: 20px; /* Add some padding */
+  }
+
+  .header-content h2 {
+    font-size: 18px; /* Adjust font size */
+  }
+
+  .header-content p {
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .header-content button {
+    padding: 10px 20px; /* Adjust button padding */
+    font-size: 12px; /* Adjust font size */
+  }
+}

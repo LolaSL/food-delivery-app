@@ -1,0 +1,73 @@
+/* Footer.css */
+
+/* Base styles for the footer container */
+.footer {
+    background-color: #323232;
+    padding: 20px;
+    text-align: center;
+    margit
+  }
+  
+  /* Center the footer content horizontally */
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Styles for the left content section */
+  .footer-content-left {
+    flex: 1;
+    text-align: left;
+  }
+  
+  /* Logo image style */
+  .footer-content-left img {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  /* Social icons style */
+  .footer-social-icons img {
+    margin-right: 10px;
+  }
+  
+  /* Styles for the center content section */
+  .footer-content-center {
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* List items in the center section */
+  .footer-content-center ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Styles for the right content section */
+  .footer-content-right {
+    flex: 1;
+    text-align: right;
+  }
+  
+  /* Contact details style */
+  .footer-content-right ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Horizontal line style */
+  hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+  }
+  
+  /* Copyright text style */
+  .footer-copyright {
+    font-size: 12px;
+    color: #888;
+  }
+  

@@ -1,0 +1,65 @@
+/* Explore.css */
+
+/* Base styles for the explore menu container */
+.explore-menu {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+
+  }
+  
+  /* Heading styles */
+  .explore-menu h1 {
+
+    color:#262626;
+    font-weight: 500;
+
+  }
+  
+  /* Text paragraph styles */
+  .explore-menu-text {
+    max-width: 60%;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .explore-menu-list{
+    display: flex;
+    align-items: center;
+    justify
+  }
+  /* Menu list item styles */
+  .explore-menu-list-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  /* Active menu item styles */
+  .explore-menu-list-item .active {
+    border: 2px solid #007bff;
+    border-radius: 50%;
+  }
+  
+  /* Menu item image styles */
+  .explore-menu-list-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  /* Menu item name styles */
+  .explore-menu-list-item p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Horizontal rule styles */
+  .explore-menu hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+  }
+  

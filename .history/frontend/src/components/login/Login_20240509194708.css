@@ -1,0 +1,109 @@
+/* Login.css */
+
+/* Base styles for the login popup */
+.login-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Styles for the login popup container */
+.login-popup-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Styles for the login popup title */
+.login-popup-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Adjusting the size of the close icon */
+.login-popup-title img {
+  width: 24px; /* Increased size for better visibility */
+  height: 24px;
+  cursor: pointer;
+}
+
+/* Styles for the login popup inputs */
+.login-popup-inputs input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* Styles for the login button */
+.button-login {
+  background-color: coral;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Styles for the login popup condition */
+.login-popup-condition {
+  display: flex;
+  gap: 8px;
+  align-items: start;
+  margin-top: -15px;
+}
+
+/* Adjusting the checkbox alignment */
+.login-popup-condition input {
+  margin-top: 5px;
+}
+
+/* Text styles for terms and conditions */
+.login-popup-condition p {
+  margin: 0;
+}
+
+/* Styles for interactive text elements */
+span {
+  color: teal;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 600px) {
+  .login-popup {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .login-popup-container {
+    gap: 5px;
+  }
+
+  .login-popup-inputs input,
+  .button-login {
+    padding: 15px;
+  }
+}
+
+/* Responsive styles for medium screens */
+@media only screen and (min-width: 750px) and (max-width: 1050px) {
+  /* Adjusting the size of the star images for medium screens */
+  .login-popup-title img {
+    width: 16px; /* Smaller size for medium screens */
+    height: 16px;
+  }
+}

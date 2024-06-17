@@ -1,0 +1,8 @@
+.order-item{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+    align-itms:start;
+    gap:30px;
+    padding:20px;
+    border:1px solid corals;
+}

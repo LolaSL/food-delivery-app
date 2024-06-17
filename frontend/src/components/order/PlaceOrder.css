@@ -1,0 +1,68 @@
+
+.order {
+  display: flex;
+  align-items:start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  margin-top:10px;
+}
+
+.order-left {
+  flex: 1;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline-color:coral;
+}
+
+
+.multi-fields {
+  display: flex;
+  gap: 10px;
+}
+
+
+.order-right {
+  flex: 1;
+}
+
+
+.cart-totals-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+
+.btn-payment {
+  border: none;
+  color: white;
+  background-color:coral;
+  width: max(12vw, 350px);
+  height: 30px;
+  margin:10px auto;
+  cursor:pointer;
+  border-radius:7px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .order {
+    flex-direction: column;
+  }
+
+  .order-left, .order-right {
+    width: 100%;
+  }
+}

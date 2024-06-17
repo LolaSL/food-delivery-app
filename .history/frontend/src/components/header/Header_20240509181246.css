@@ -1,0 +1,81 @@
+.header-container {
+  height: 31vw;
+  margin: 30px auto;
+  background: url("header_img.png") no-repeat;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  object-fit: contain;
+}
+
+.header-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  max-width: 60%;
+  bottom: 10%;
+  left: 6vw;
+  animation: fadeIn 4s;
+}
+
+.header-content h2 {
+  font-weight: 500;
+  color: #eb0505;
+  font-size: max(4.5vw, 24px);
+  text-shadow: 1px 1px 2px white;
+}
+
+.header-content p {
+  color: #eb0505; /* Removed redundant color property */
+  font-size: 1.3vw;
+  text-shadow: 1px 1px 2px black;
+  text-align: justify;
+}
+
+button {
+  margin: 15px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Responsive styles */
+@media (max-width: 1050px) {
+  .header {
+    height: 38vw;
+  }
+  .header-content {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    min-height: 40vh; /* Adjusted for better aspect ratio on smaller screens */
+  }
+
+  .header-content {
+    align-items: center; /* Center content for smaller screens */
+    left: 50%;
+    transform: translateX(-50%); /* Center align the content horizontally */
+    text-align: center; /* Center align text for readability */
+  }
+
+  .header-content h2 {
+    font-size: 18px; /* Increased size for visibility on small screens */
+  }
+
+  .header-content p {
+    font-size: 12px; /* Adjusted text size for readability */
+  }
+
+  button {
+    font-size: 11px;
+  }
+}

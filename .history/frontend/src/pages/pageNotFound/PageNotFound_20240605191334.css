@@ -1,0 +1,9 @@
+.not-found{
+    text-align:center;
+}
+
+.title-not-found{
+    color: coral;
+    font-weight:bold;margin
+}
+style={{ color:"coral", fontWeight:"bold", margin:"50px"  }}

@@ -1,0 +1,85 @@
+/* Cart.css */
+
+/* Base styles for the cart */
+.cart {
+  margin-top: 100px;
+}
+
+/* Styles for the cart items container */
+.cart-items {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Styles for the cart items title */
+.cart-items-title {
+  display:grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items; center;
+  color: grey;
+ font-size:max(1vw, 12px);
+}
+
+/* Styles for individual cart items */
+.cart-items-item {
+margin: 10px 0px;
+color-black
+}
+
+/* Styles for images in cart items */
+.cart-items-item img {
+  width: 50px; /* Adjust as needed */
+  height: auto;
+  margin-right: 10px;
+  border-radius: 6px;
+}
+
+/* Styles for text in cart items */
+.cart-items-item p {
+  margin: 0 5px;
+}
+
+/* Styles for the remove button in cart items */
+.cart-items-item p:last-child {
+  cursor: pointer;
+  color: red;
+}
+
+.cart-bottom{
+  margin-top: 80ps;
+  /* display: flex;
+  justify-content:space-between;
+  gap:max(12vw,20px); */
+}
+.cart-total {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+
+}
+
+.cart-total-details{
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+}
+
+.
+//Responsive styles for smaller screens
+
+/* @media only screen and (max-width: 768px) {
+  .cart-items-title, .cart-items-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-items-item img {
+    width: 100%; /* Full width on smaller screens */
+  /* } */
+
+  /* .cart-items-item p {
+    width: 100%; /* Full width on smaller screens */
+    /* margin-bottom: 5px;
+  } */ 
+/* } */ 

@@ -1,0 +1,114 @@
+/* FoodItem.css */
+
+/* Base styles for the food item container */
+.food-item {
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px #00000015;
+  transition: 0.3s;
+  animation: fadeIn 2s;
+}
+
+/* Food item image */
+.food-item-image {
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+}
+/* Food item info container */
+.food-item-info {
+  padding-left: 20px;
+}
+/* Food item image container */
+.food-item-img-container {
+  position: relative;
+}
+
+.food-item-img-container .add {
+  width: 35px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* Responsive image class */
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+/* Food item name and rating */
+.food-item-name-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:10px;
+}
+
+.food-item-name-rating p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Food item rating (assuming it's an icon) */
+.food-item-rating img {
+  width: 10px;
+  height: 10px;
+}
+
+.food-item-counter {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 6px;
+  border-radius: 50px;
+  background-color:white;
+}
+.food-item-counter
+img{
+
+}
+.food-item-name {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/* Food item description */
+.food-item-desc {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* Food item price */
+.food-item-price {
+  margin: 10px 0px;
+  font-weight: 500;
+  color: coral;
+  font-size: 20px;
+}
+
+/* Grid layout for larger screens */
+@media screen and (min-width: 1024px) {
+  .food-display-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 items in a row */
+    gap: 20px;
+  }
+}
+
+/* Single column layout for small screens */
+@media screen and (max-width: 768px) {
+  .food-item {
+    width: 100%; /* Full width on smaller screens */
+  }
+  .food-item-rating img {
+    width: 30px;
+    height: 30px;
+  }
+}
