@@ -1,7 +1,6 @@
 import express from 'express';
 import cors from 'cors';
 import path from "path";
-import { connectDB } from './config/db.js';
 import foodRouter from './routes/foodRoute.js';
 import userRouter from './routes/userRoute.js';
 import cartRouter from './routes/cartRoute.js';
@@ -21,7 +20,20 @@ app.use(cors());
 app.use(express.json());
 
 
+const connectDB = async () => {
+    const uri = process.env.MONGODB_URI;
 
+    if (!uri) {
+        throw new Error('The MONGODB_URI environment variable is not defined');
+    }
+
+    mongoose.connect(uri, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    })
+        .then(() => console.log('MongoDB connected successfully'))
+        .catch((err) => console.error('MongoDB connection error:', err));
+};
 connectDB();
 
 app.use("/api/food", foodRouter);
@@ -32,9 +44,9 @@ app.use("/api/order", orderRouter);
 app.use('/api/menu', menuRouter);
 
 const __dirname = path.resolve();
-app.use(express.static(path.join(__dirname, "/frontend/build")));
+app.use(express.static(path.join(__dirname, "/frontend/dist")));
 app.get('*', (req, res) =>
-    res.sendFile(path.join(__dirname, 'frontend/build/index.html'))
+    res.sendFile(path.join(__dirname, 'frontend/dist/index.html'))
 );
 
 
