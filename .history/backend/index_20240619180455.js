@@ -41,5 +41,5 @@ app.get('*', (req, res) =>
 app.get('/', (req, res) => {
     res.send("API is working!");
 })
-
+    
 app.listen(port, () => { console.log(`Server started on http://localhost:${port}`) });

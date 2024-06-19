@@ -26,6 +26,6 @@ text-align: center;
         gap:15px;
     }
     .list-table-format .title{
-        display: none;
+        disp: none;
     }
  }

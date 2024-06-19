@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import path from "path";
+import path from "path"
 import { connectDB } from './config/db.js';
 import foodRouter from './routes/foodRoute.js';
 import userRouter from './routes/userRoute.js';
@@ -31,15 +31,8 @@ app.use("/api/cart", cartRouter);
 app.use("/api/order", orderRouter);
 app.use('/api/menu', menuRouter);
 
-const __dirname = path.resolve();
-app.use(express.static(path.join(__dirname, "/frontend/build")));
-app.get('*', (req, res) =>
-    res.sendFile(path.join(__dirname, 'frontend/build/index.html'))
-);
-
-
 app.get('/', (req, res) => {
     res.send("API is working!");
 })
-
+    
 app.listen(port, () => { console.log(`Server started on http://localhost:${port}`) });

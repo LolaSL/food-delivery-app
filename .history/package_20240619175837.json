@@ -1,0 +1,17 @@
+{
+  "name": "food-delivery-app",
+  "version": "1.0.0",
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "index.js",
+  "scripts": {
+    "build":"cd backend && npm install && cd ../frontend && npm install && cd ../admin && npm install && npm run build",
+    "start": "node backend/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository":{
+    "type":"git","url":"https://github"
+  },
+  "author": "",
+  "license": "ISC", 
+  "homepage": "https://github.com/LolaSL/food-delivery-app#readme"
+}
