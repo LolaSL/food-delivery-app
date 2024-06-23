@@ -34,7 +34,7 @@ app.use('/api/menu', menuRouter);
 const __dirname = path.resolve();
 app.use(express.static(path.join(__dirname, "/frontend/dist","/admin/dist" )));
 app.get('*', (req, res) =>
-    res.sendFile(path.join(__dirname, '/frontend/dist/index.html','/admin/dist/index.html'))
+    res.sendFile(path.join(__dirname, 'frontend/dist/index.html','frontend/dist/index.html'))
 );
 
 
